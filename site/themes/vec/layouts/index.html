@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" xmlns="http://www.w3.org/1999/xhtml" 
+   xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+  <title> {{ .Site.Title }} </title>
+  
+  {{ with .Site.Params.Keywords }}<meta name="keywords" content="{{.}}">{{ end }}
+  {{ with .Site.Params.Description }}<meta name="description" content="{{.}}">{{ end }}
+  
+  {{ partial "head.html" . }}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:description" content="{{ .Site.Params.Description }}" />
+
+  <meta property="og:image" content="{{ .Site.Params.Avater }}" />
+    
+</head>
+
+<body>
+
+
+  {{ partial "header.html" . }}
+  
+  <section class="user-profile">
+    <figure class="user-avatar">
+      <img alt="avater" src="{{ .Site.Params.Avater }}">
+      <figcaption class="user-socials">
+        {{ with .Site.Params.GithubID }}
+        <a href="https://github.com/{{.}}" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        {{ end }}
+
+        {{ with .Site.Params.FacebookID }}
+        <a href="https://facebook.com/{{.}}" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        {{ end }}
+
+        {{ with .Site.Params.LinkedInID }}
+        <a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        {{ end }}
+
+        {{ with .Site.Params.InstagramID }}
+        <a href="https://instagram.com/{{.}}" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        {{ end }}        
+        
+      </figcaption>
+    </figure>
+    <p class="user-motivation" style="color: #2ecc71;">{{ .Site.Params.SelfIntro }}</p>
+  </section>
+  
+  {{ partial "footer.html" . }}
+  {{ partial "analytics.html" . }}
+
+</body>
+</html>

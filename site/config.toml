@@ -1,3 +1,44 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "JBroc.tk"
+theme = "vec"
+Email = "kiendo95@gmail.com"
+canonifyurls = true
+
+# Google Analytics
+googleAnalytics = "UA-81174920-2"
+
+# Disqus
+disqusShortname = "jbroc"
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+  [[menu.main]]
+    name = "about"
+    weight = 1
+    url = "/about"
+  [[menu.main]]
+    name = "contact"
+    weight = 1
+    url = "/contact"
+
+  
+[params]
+  author = "Kien Do"
+  Keywords = "key"
+  Description = "JBroc.tk - solid developer blog"
+  
+  Avater = "img/my8bit.png"
+  SelfIntro = "'sup( );"
+  Email = "kiendo95@gmail.com" 
+  
+  GithubID = "kiendt07"
+  FacebookID = "kiendo.95"
+  InstagramID = "kienj__"
+  ASKfmID = "@kiendo95"
+  AnalyticsID = "Your Google Analytics tracking code"
+  DisqusID = "kienj"
