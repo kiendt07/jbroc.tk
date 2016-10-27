@@ -77,7 +77,7 @@ Go to the Github repo that you contain the site, click Settings, and then type t
 
 I created my site by using [Hugo](http://gohugo.io), with `VEC` theme. Feel free to check that out.
 The domain `.tk` I used was registered on [Freenom](http://freenom.com), and [Github Pages](https://pages.github.com) for serving static files.
-So, last but not least, check my site usually guys ;)
+So, last but not least, check my site usually guys ;)  hahaha
 
 ### [JBroc.tk](http://jbroc.tk)
 
