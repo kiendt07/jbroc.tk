@@ -3,7 +3,7 @@
 
 <head>
   <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
-  
+
   {{ partial "head.html" . }}
 </head>
 
@@ -16,15 +16,15 @@
       <div class="post-content">
         {{ .Content }}
       </div>
-      
+
       {{ if .Params.formspree }}{{ partial "formspree.html" . }}{{ end }}
-      
+
     </section>
   </div>
-    
-    {{ if .Params.comments }}{{ partial "disqus.html" . }}{{ end }}
+
+    {{ if .Params.comments }}{{ partial "post-comments.html" . }}{{ end }}
   {{ partial "footer.html" . }}
-  
+
   {{ partial "analytics.html" . }}
 
 </body>

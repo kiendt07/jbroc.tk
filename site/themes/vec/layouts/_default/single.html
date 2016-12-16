@@ -3,9 +3,9 @@
 
 <head>
   <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
-  
+
   {{ partial "head.html" . }}
-  
+
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="blog" />
   <meta property="og:url" content="{{ .Permalink }}" />
@@ -18,7 +18,7 @@
 
   <div class="content">
     {{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
-    
+
     <section class="post">
       <div class="fb-save" data-uri="{{ .Permalink }}" data-size="large"></div>
       <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -28,30 +28,21 @@
         {{ .Content }}
       </div>
     </section>
-    
+
     <section class="pagination clearfix">
       {{ with .PrevInSection }}
-      <a class="btn previous " href="{{.Permalink}}"> {{ .Title }} </a> 
-      {{ end }} 
+      <a class="btn previous " href="{{.Permalink}}"> {{ .Title }} </a>
+      {{ end }}
       {{ with .NextInSection }}
-      <a class="btn next " href="{{.Permalink}}"> {{ .Title }} </a> 
+      <a class="btn next " href="{{.Permalink}}"> {{ .Title }} </a>
       {{ end }}
     </section>
-    
-    {{ if .Params.comments }}{{ partial "disqus.html" . }}{{ end }}
 
-    <form method="POST" action="https://api.staticman.net/v1/entry/kiendt07/kiendt07.github.io/master">
-      <!-- e.g. "2016-01-02-this-is-a-post" -->
-      <input name="options[slug]" type="hidden" value="{{ .Permalink }}">
-      <label><input name="fields[name]" type="text">Name</label>
-      <label><input name="fields[email]" type="email">E-mail</label>
-      <label><textarea name="fields[message]"></textarea>Message</label>
-      <button type="submit">Go!</button>
-    </form>
+    {{ if .Params.comments }}{{ partial "post-comments.html" . }}{{ end }}
   </div>
-  
+
   {{ partial "footer.html" . }}
-  
+
   <script src="{{ "js/highlight.min.js" | absURL }}"></script>
   <script>
     hljs.initHighlightingOnLoad();

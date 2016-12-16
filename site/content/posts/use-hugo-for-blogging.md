@@ -1,5 +1,5 @@
 +++
-comments = false
+comments = true
 slug = ""
 toc = true
 draft = false
@@ -67,7 +67,7 @@ Go to the Github repo that you contain the site, click Settings, and then type t
 
     like this:
     ![DNS records](/img/dns-records.png)
-    
+
     You may just have to understand that the DNS config from above will redirect every single request to our custom domain, point to out githubio domain.
 * Then we're good to go. Wait at most 5 minutes, then navigate to our domain. See the painless magical.
 
@@ -80,4 +80,3 @@ The domain `.tk` I used was registered on [Freenom](http://freenom.com), and [Gi
 So, last but not least, check my site usually guys ;)  hahaha
 
 ### [JBroc.tk](http://jbroc.tk)
-
