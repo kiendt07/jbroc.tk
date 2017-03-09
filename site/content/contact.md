@@ -9,7 +9,7 @@ toc = false
 
 ### EMAIL
 
-[kiendo95@gmail.com](mailto:kiendo95@gmail.com)
+[kien@kiendo.info](mailto:kien@kiendo.info)
 
 ### GITHUB
 
@@ -24,6 +24,3 @@ https://www.instagram.com/kienj__/
 
 ### ASK.fm
 http://ask.fm/kiendo95
-
-
-
