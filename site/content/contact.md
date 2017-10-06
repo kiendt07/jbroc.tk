@@ -17,10 +17,10 @@ https://github.com/kiendt07/
 
 ### Facebook
 
-https://www.facebook.com/kiendo.95/
+https://www.facebook.com/kiendo.info/
 
 ### Instagram
-https://www.instagram.com/kienj__/
+https://www.instagram.com/theboywhocantleave/
 
 ### ASK.fm
 http://ask.fm/kiendo95

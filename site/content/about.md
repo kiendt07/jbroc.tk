@@ -18,16 +18,14 @@ even just a little.
 
 ## How can you contact me?
 
-Send me an email at **[kiendo95@gmail.com](mailto:kiendo95@gmail.com)** or look at my **[contact page](/contact)**
+Send me an email at **[kien@kiendo.info](mailto:kien@kiendo.info)** or look at my **[contact page](/contact)**
 
 ## What else?
 
 <img src="/img/mu-cang-chai.jpg">
 
-Love traveling. 
+Love traveling.
 
 Running a lot. The near goal is 21K.
 
 Passionate in football. A fan of Real Madrid.
-
-
